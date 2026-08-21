@@ -1,6 +1,8 @@
 {
-  "name": "azure-webapp-project",
+  "name": "tm-lowcarbon-service",
   "version": "1.0.0",
+  "description": "TM Lowcarbon Service AB Stockholm Taxi Website",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   }
