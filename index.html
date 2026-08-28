@@ -236,7 +236,8 @@
   </main>
 
 
-  <footer>
+  <p id="service-status">Checking taxi availability...</p>
+<footer>
     <div>
       <strong>TM Lowcarbon Service AB</strong>
       <p>Professional taxi service in Stockholm</p>
@@ -256,7 +257,8 @@
       const data = await response.json();
 
       console.log("Azure Function:", data);
-      alert(data.message);
+     document.getElementById("service-status").innerText =
+  data.available ? "🟢 Taxi Service Available — " + data.city : "🔴 Taxi Service Unavailable";
     } catch (error) {
       console.error("Function connection failed:", error);
     }
