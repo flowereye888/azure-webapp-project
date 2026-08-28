@@ -59,6 +59,9 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
+                  app-name: 'Malar-WebApp'
+          slot-name: 'Production'
+          package: .
           app-name: 'Malar-WebApp'
           slot-name: 'Production'
           package: .
